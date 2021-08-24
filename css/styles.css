@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+:root {
+  --bright-orange: hsl(31deg 77% 52%);
+  --dark-cyan: hsl(184deg 100% 22%);
+  --very-dark-cyan: hsl(179deg 100% 13%);
+  --light-grey: hsl(0deg 0% 95%);
+  --white: hsla(0deg 0% 100% / 0.75);
+  --radius: 0.5rem;
+}
+
+html {
+  line-height: 1.5;
+  box-sizing: border-box;
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding-block: 4rem;
+  padding-inline: 1.5rem;
+  background-color: var(--light-grey);
+  font-size: 0.9375rem;
+}
+
+h2 {
+  font-family: "Big Shoulders Display", sans-serif;
+  text-transform: uppercase;
+  color: var(--light-grey);
+}
+
+a:link {
+  text-transform: capitalize;
+  text-decoration: none;
+  text-align: center;
+}
+
+.card {
+  padding: 3rem;
+  color: var(--white);
+}
+
+.card__sedan {
+  background-color: var(--bright-orange);
+  border-radius: var(--radius) var(--radius) 0 0;
+}
+
+.card__suvs {
+  background-color: var(--dark-cyan);
+}
+
+.card__luxury {
+  background-color: var(--very-dark-cyan);
+  border-radius: 0 0 var(--radius) var(--radius);
+}
+
+.card__title {
+  font-size: 2.5rem;
+  margin-block: 1.5rem;
+}
+
+.card__body {
+  margin-block: 0.625rem 1.5rem;
+}
+
+.card__link {
+  display: inline-block;
+  padding: 0.625rem 2rem;
+  border: 0.125rem solid transparent;
+  border-radius: 2.25rem;
+  background-color: var(--light-grey);
+}
+
+.card__sedan .card__link {
+  color: var(--bright-orange);
+}
+
+.card__suvs .card__link {
+  color: var(--dark-cyan);
+}
+
+.card__luxury .card__link {
+  color: var(--very-dark-cyan);
+}
+
+.card__link:hover {
+  background-color: transparent;
+  border-color: var(--white);
+  color: var(--white);
+}
+
+/* MEDIA QUERIES */
+@media screen and (min-width: 48em) {
+  body {
+    padding-block: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1.5fr);
+    max-width: 1335px;
+  }
+
+  .card__sedan {
+    border-radius: var(--radius) 0 0 var(--radius);
+  }
+
+  .card__luxury {
+    border-radius: 0 var(--radius) var(--radius) 0;
+  }
+}
+
+@media screen and (min-width: 62em) {
+  .cards {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 35rem;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-inline: 3.5rem;
+  }
+
+  .card__body {
+    max-width: 23ch;
+    font-size: 1.10rem;
+  }
+
+  .card__link {
+    margin-block-start: auto;
+  }
+}
