@@ -90,10 +90,15 @@ a:link {
   color: var(--very-dark-cyan);
 }
 
-.card__link:hover {
+.card__link:hover,
+.card__link:focus {
   background-color: transparent;
   border-color: var(--white);
   color: var(--white);
+}
+
+.card__link:focus {
+  outline: none;
 }
 
 /* MEDIA QUERIES */
