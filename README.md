@@ -15,7 +15,6 @@ This is a solution to the [3-column preview card component challenge on Frontend
   - [Useful resources](#useful-resources)
 - [Author](#author)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
 
@@ -65,7 +64,6 @@ For this specific challenge I did not have to search for a solution to a particu
 - [Traversy Media](https://www.youtube.com/c/TraversyMedia) - This youtube channel is a great resource for learning web technologies as well as many others on a higher level.
 - [Kevin Powell](https://www.youtube.com/user/KepowOb) - Kevin Powell's youtube channel is a great one about tricks and tips as well concepts on CSS. Incredible channel to learn one or two tricks as well as learning how CSS works.
 
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
 
 ## Author
 
